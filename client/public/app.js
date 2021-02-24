@@ -3,6 +3,7 @@
 const populateCharactersTable = function(){
 	$.ajax({
 		method: 'GET',
+		// heroku url that I deployed my sesame street characters api to
 		url: 'https://nameless-headland-01187.herokuapp.com/characters',
 		success:function(res){
 			res.data.forEach((character) => {
